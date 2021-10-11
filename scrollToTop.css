@@ -1,0 +1,48 @@
+/* ==== Scroll to top button ==== */
+
+
+.top-link {
+    visibility: hidden;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    text-align: center;
+    background-color: #73585f;
+    opacity: .5;
+    padding: 1.2rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    z-index: 2;
+  }
+  
+  
+  
+  .top-link i {
+    font-size: 3vh;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  
+  
+  .top-link:hover {
+    background-color: #26151A;
+  }
+  
+  
+  
+  /* Classes for JS */
+  
+  .show {
+    visibility: visible;
+    opacity: .8;
+  }
+  
+  .not-show {
+    visibility: hidden;
+    opacity: 0;
+  }

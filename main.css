@@ -1,0 +1,540 @@
+/*-------------*\
+*
+*  BASE STYLES
+*
+\*-------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vh;
+    color: #73585f;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/*------------*\
+*
+*    LAYOUT
+*
+\*------------*/
+
+
+/* ==== 1. HEADER STYLES ==== */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('assets/background1.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: 75%;
+    position: relative;
+    margin-bottom: 10vh;
+}
+
+
+
+
+@media(min-width: 1200px) {
+    header {
+        background-position: center center;
+    }
+}
+
+
+
+
+.title-box {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media(min-width: 1200px) {
+    .buttons {
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+/* ==== 2. MAIN STYLES ==== */
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/* Intro section */
+
+.intro {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+
+
+article {
+    padding: 1rem;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+
+
+
+@media(min-width: 1200px) {
+    .intro {
+        flex-direction: row;
+    }
+
+    article {
+        border-radius: 70px;
+        box-shadow: 5px 5px 10px 2px #645d5d;
+        padding: 2rem;
+        margin-left: 10vh;
+        margin-right: -10vh;
+    }
+}
+
+
+
+
+
+/* Carousel */
+
+.owl-carousel {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+
+
+
+
+/* Reviews */
+
+.review {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-bottom: 10vh;
+}
+
+
+
+.review-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+
+
+.who-said {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+}
+
+
+
+
+@media(min-width: 1024px) {
+    .review {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .review-box {
+        width: 90%;
+    }
+}
+
+
+
+
+@media(min-width: 1200px) {
+    .review {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/*------------*\
+*
+*    IMAGES
+*
+\*------------*/
+
+.welcome {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+
+
+@media(min-width: 1200px) {
+    .welcome {
+        width: 50%;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+/* ==== CAROUSEL ==== */
+
+.slide {
+    margin-bottom: 10vh;
+}
+
+
+
+
+.item img {
+    margin-bottom: 2vh;
+}
+
+
+
+
+
+/* ==== REVIEW ==== */
+
+.who-said img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: saturate(50%);
+}
+
+
+
+
+@media(min-width: 1024px) {
+    .who-said img {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+
+
+
+
+/*--------------*\
+*
+*   TYPOGRAPHY
+*
+\*--------------*/
+
+h1 {
+    font-family: 'Alex Brush', cursive;
+    font-size: 7.5vh;
+    line-height: 1.1;
+    letter-spacing: .1rem;
+    color: #ffffff;
+}
+
+
+
+
+h2 {
+    font-family: 'Antic Didone', serif;
+    font-size: 5vh;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: .15rem;
+    color: #F2D5DD;
+    margin-bottom: 1rem;
+}
+
+
+
+h3 {
+    font-family: 'Antic Didone', serif;
+    font-size: 3vh;
+    line-height: 1.1;
+    letter-spacing: .1rem;
+    color: #f2f2f2;
+    margin-bottom: 5vh;
+}
+
+
+
+
+@media(min-width: 1024px) {
+    h1 {
+        font-size: 8.5vh;
+    }
+
+    h3 {
+        font-size: 3.5vh;
+    }
+}
+
+
+
+@media(min-width: 1200px) {
+    h1 {
+        font-size: 15vh;
+    }
+
+    h2 {
+        font-size: 7vh;
+    }
+}
+
+
+
+
+
+h4 {
+    font-family: 'Antic Didone', serif;
+    font-size: 6vh;
+    line-height: 1.1;
+    text-align: center;
+    color: #F2D5DD;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+h6 {
+    font-size: 1.8vh;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1rem;
+    margin-bottom: 2vh;
+}
+
+
+
+
+@media(min-width: 1024px) {
+    h6 {
+        margin-bottom: 5vh;
+    }
+}
+
+
+
+
+p {
+    line-height: 1.2;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.review-box p {
+    margin-bottom: 1rem;
+}
+
+
+
+
+.who-said span {
+    font-family: 'Antic Didone', serif;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    margin-left: 1rem;
+    color: #F2D5DD;
+}
+
+
+
+
+hr, .divider {
+    width: 50%;
+    height: 3px;
+    background-color: #ffffff;
+    margin-bottom: 3vh;
+    border: 0;
+}
+
+
+
+.divider {
+    background-color: #ebe6e6;
+}
+
+
+
+@media(min-width: 768px) {
+    hr, .divider {
+        width: 30%;
+        height: 4px;
+    }
+}
+
+
+
+@media(min-width: 1024px) {
+    hr {
+        width: 40%;
+    }
+}
+
+
+
+@media(min-width: 1200px) {
+    hr {
+        width: 30%;
+    }
+
+    .divider {
+        width: 15%;
+    }
+}
+
+
+
+
+
+/*--------------*\
+*
+*   COMPONENTS
+*
+\*--------------*/
+
+/* ==== 1. BUTTONS ==== */
+
+.buttons a, .more {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: .8rem;
+    background-color:#F2D5DD;
+    border: 3px solid #ffffff;
+    border-radius: 40px;
+    font-family: 'Belleza', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 2vh;
+    vertical-align: middle;
+}
+
+
+
+.more {
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    font-size: 2.5vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+.buttons a:hover {
+    background-color: #ffffff;
+    color: #F2D5DD;
+    transition: .5s ease-in;
+}
+
+
+
+
+.more:hover {
+    background-color: #ffffff;
+    color: #F2D5DD;
+    border: 3px solid #F2D5DD;
+    transition: .3s ease-in;
+}
+
+
+
+
+@media(min-width: 768px) {
+    .buttons a {
+        padding: 1rem;
+    }
+}
+
+
+
+@media(min-width: 1024px) {
+    .buttons a, .more {
+        padding: 1.5rem;
+        border-radius: 50px;
+    }
+}
+
+
+
+@media(min-width: 1200px) {
+    .buttons a {
+        padding: 1.3rem;
+        border-radius: 50px;
+        margin: .5rem;
+    }
+
+    .more {
+        padding: 1rem;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+    }
+}

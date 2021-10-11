@@ -1,8 +1,22 @@
-// 1. Dropdown menu
+// 1. Dropdown menu for mobile
 
 $(document).ready(function () {
     $(".bars").click(function() {
+        $("nav").toggle(250);
+        $(".bars").css("display", "none");
+        $(".close").css("display", "block");
+    });
+});
+
+
+
+
+
+$(document).ready(function () {
+    $(".close").click(function() {
         $("nav").toggle(100);
+        $(".bars").css("display", "block");
+        $(".close").css("display", "none");
     });
 });
 
@@ -10,32 +24,7 @@ $(document).ready(function () {
 
 
 
-// 2. Owl Carousel
 
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:0,
-        nav:false,
-        autoplay: true,
-        autoplayTimeout:5000,
-        autoplaySpeed: 3000,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            1024:{
-                items: 2
-            },
-            1200:{
-                items:3
-            }
-        }
-    });
-});
 
 
 

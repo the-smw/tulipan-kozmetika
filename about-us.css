@@ -1,0 +1,240 @@
+/*-------------*\
+*
+*  BASE STYLES
+*
+\*-------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vh;
+    color: #73585f;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/*----------*\
+*
+*   LAYOUT
+*
+\*----------*/
+
+main {
+    width: 100%;
+    height: auto;
+    padding: .5rem;
+}
+
+
+
+
+@media(min-width: 1024px) {
+    main {
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+
+@media(min-width: 1200px) {
+    main {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10vh;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+@media(min-width: 1200px) {
+    .team {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.about {
+    margin-bottom: 7vh;
+}
+
+
+
+
+@media(min-width: 768px) {
+    .about {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10vh;
+    }
+}
+
+
+
+
+
+
+
+/*-------------*\
+*
+*    IMAGES 
+*
+\*-------------*/
+
+.about img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: saturate(50%);
+    margin-bottom: 3vh;
+}
+
+
+
+
+@media(min-width: 1200px) {
+    .about img {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+/*--------------*\
+*
+*   TYPOGRAPHY
+*
+\*--------------*/
+
+h1 {
+    font-family: 'Alex Brush', cursive;
+    font-size: 6.5vh;
+    line-height: 2;
+    letter-spacing: .1rem;
+    color: #ffffff ;
+    text-align: center;
+}
+
+
+
+
+h2 {
+    font-family: 'Antic Didone', serif;
+    font-size: 5vh;
+    line-height: 1.2;
+    letter-spacing: .05rem;
+    color: #F2D5DD;
+    margin-bottom: 5vh;
+}
+
+
+
+
+h3 {
+    font-size: 3.5vh;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+
+
+
+article p, .about p {
+    line-height: 1.2;
+    text-align: justify;
+    margin-bottom: 2vh;
+}
+
+
+
+
+@media(min-width: 1200px) {
+    .about p {
+        width: 90%;
+    }
+}
+
+
+
+
+
+@media(min-width: 1200px) {
+    h1 {
+        font-size: 10vh;
+    }
+    
+    h2 {
+        font-size: 7.5vh;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
+
+
+
+
+
+.divider {
+    width: 50%;
+    height: 3px;
+    background-color: #ebe6e6;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border: 0;
+}
+
+
+
+
+@media(min-width: 768px) {
+    .divider {
+        width: 30%;
+        height: 4px;
+    }
+}
+
+
+
+
+@media(min-width: 1200px) {
+    .divider {
+        width: 25%;
+    }
+}

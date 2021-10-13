@@ -122,6 +122,14 @@ main {
 
 
 
+.about img:hover {
+    filter: saturate(80%);
+}
+
+
+
+
+
 @media(min-width: 1200px) {
     .about img {
         width: 90%;
